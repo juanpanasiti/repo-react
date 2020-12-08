@@ -20,8 +20,13 @@ Es una función que no recibe ningún parámetro y vuelve los valores de cada ca
 
 ## Ejemplo de uso:
 
-Solicitud de data de la página de pokeapi
+Uso en un formulario de datos personales:
 
 ```javascript
-const { values, handleInputChange, reset } = useForm();
+const initialForm = {
+  nombre: '',
+  apellido: '',
+  email: ''
+}
+const { values, handleInputChange, reset } = useForm(initialForm);
 ```
